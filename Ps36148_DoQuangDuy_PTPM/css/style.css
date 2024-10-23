@@ -1,0 +1,21 @@
+/* Hero Section */
+.bg-hero {
+  background-image: url("/images/a3.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#hero p {
+  font-size: 1.5rem;
+}
+
+/* Services Icons */
+.bi-heart-pulse, .bi-dumbbell, .bi-droplet {
+  color: #00ff00;
+}

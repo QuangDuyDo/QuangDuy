@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khách sạn Happy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="bg-dark text-white py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">Hottel Happy</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto" id="menu">
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="d-flex align-items-center bg-hero">
+        <div class="container text-center text-white">
+            <h1>Chào mừng đến với Hottel Happy</h1>
+            <p class="lead">đưa mọi người đến với trải nghiệm tốt nhât</p>
+            <a href="#contact" class="btn btn-primary">Đăng ký ngay</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="GT" class="py-5">
+        <div class="container text-center">
+            <h2>Giới thiệu</h2>
+            <p>Khách sạn Happy chúng tôi mang đến cho khách hàng trải nghiệm thoải mái nhất.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="DV" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2>Dịch vụ của chúng tôi</h2>
+            <div class="row text-center" id="listServices">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="PH" class="py-5">
+        <div class="container text-center">
+            <h2>Phản hồi từ khách hàng</h2>
+            <div class="row" id="Testimonials">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="LH" class="py-5 bg-dark text-white text-center">
+        <div class="container">
+            <h2>Liên hệ với chúng tôi</h2>
+            <p>Email: HottelHappy@gmail.com | Hotline: 0123 456 789</p>
+            <a href="#" class="btn btn-primary">Liên hệ ngay</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-3 bg-dark text-white text-center">
+        <p>&copy; Ps36148_Đỗ Quang Duy_PTPM.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module">
+        import {showListMenu, showListTestimonials, showListServie} from './js/app.js';
+        document.getElementById("menu").innerHTML = showListMenu();
+        document.getElementById("Testimonials").innerHTML = showListTestimonials();
+        document.getElementById("listServices").innerHTML = showListServie();
+        
+    </script>
+</body>
+</html>
